@@ -3,14 +3,14 @@ export default function Header() {
     <div>
       <nav className="bg-primary-teal py-5 sticky top-0 z-50">
         <div className="max-w-[1000px] mx-auto px-4 py-3 flex items-center justify-between">
-          <a href="#home" className="text-xl font-semibold text-white">
+          <a href="#home" className="text-3xl font-semibold text-light-cream">
             Meal Planner
           </a>
 
           {/* <!-- Hamburger icon --> */}
           <button
             id="menu-btn"
-            className="md:hidden text-white focus:outline-none"
+            className="md:hidden text-light-cream focus:outline-none"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -30,19 +30,19 @@ export default function Header() {
 
           {/* <!-- Desktop menu --> */}
           <div id="menu" className="hidden sm:flex space-x-6">
-            <a href="#home" className="text-white text-xl">
+            <a href="#home" className="text-light-cream text-xl">
               Home
             </a>
-            <a href="#favorites" className="text-white text-xl">
+            <a href="#favorites" className="text-light-cream text-xl">
               Favorites
             </a>
-            <a href="#plans" className="text-white text-xl">
+            <a href="#plans" className="text-light-cream text-xl">
               Plans
             </a>
-            <a href="#grocery" className="text-white text-xl">
+            <a href="#grocery" className="text-light-cream text-xl">
               Grocery
             </a>
-            <a href="#recipes" className="text-white text-xl">
+            <a href="#recipes" className="text-light-cream text-xl">
               Recipes
             </a>
           </div>
