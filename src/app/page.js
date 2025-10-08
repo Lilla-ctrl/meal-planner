@@ -1,3 +1,9 @@
+import PlannerGrid from "./PlannerGrid";
+
 export default function Home() {
-  return null;
+  return (
+    <div>
+      <PlannerGrid />
+    </div>
+  )
 }
