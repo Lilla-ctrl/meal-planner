@@ -3,7 +3,9 @@
 @theme {
   --color-primary-teal: #359FA7;
   --color-soft-orange: #FC703C;
-  --color-warm-beige: #FEF1C3;
+  --color-warm-beige: #FDF6E0;
   --color-light-cream: #FFF8E1;
   --color-dark-navy: #3046AE;
+  --color-light-background: #FFFCF2;
+  --color-warm-button: #FFF2C4;
 }
