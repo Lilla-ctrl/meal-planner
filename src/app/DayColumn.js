@@ -10,7 +10,7 @@ export default function DayColumn(props) {
         <li className="bg-warm-beige border border-gray-300 p-3 w-full text-center rounded-xl">Snack *optional*</li>
         <li className="bg-warm-beige border border-gray-300 p-3 w-full text-center rounded-xl">Dinner</li>
       </ul>
-      <button onClick={props.onClick} className="bg-warm-button border border-gray-300 p-3 rounded-xl">+ Add meal</button>
+      <button onClick={props.handleOpen} className="bg-warm-button border border-gray-300 p-3 rounded-xl">+ Add meal</button>
     </div>
   );
 }
