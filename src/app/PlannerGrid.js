@@ -27,7 +27,8 @@ export default function PlannerGrid() {
     "Sunday",
   ];
 
-  function handleOpen() {
+  function handleOpen(day) {
+    setSelectedDay(day);
     setModalOpen(true);
   }
 
@@ -36,6 +37,7 @@ export default function PlannerGrid() {
   }
 
   function handleSave(selectedDay, mealData) {
+    console.log(selectedDay);
     const meals = { ...mealForDay };
     meals[selectedDay] = [...meals[selectedDay], mealData];
     setMealForDay(meals);

@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 export default function Modal({ handleSave, handleClose, selectedDay }) {
   const [mealData, setMealData] = useState({
     mealName: "",
@@ -48,7 +50,7 @@ export default function Modal({ handleSave, handleClose, selectedDay }) {
           </form>
           <div className="flex gap-4 w-full">
             <button
-              onClick={handleSave(selectedDay, mealData)}
+              onClick={() => handleSave(selectedDay, mealData)}
               className="flex-1 bg-warm-button hover:bg-warm-beige border-1 border-gray-300 px-5 py-2 mt-5 rounded-xl cursor-pointer"
             >
               Save
