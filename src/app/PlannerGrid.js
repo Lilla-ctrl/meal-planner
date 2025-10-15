@@ -35,10 +35,21 @@ export default function PlannerGrid() {
     setModalOpen(false);
   }
 
+  function handleSave(selectedDay, mealData) {
+    const meals = { ...mealForDay };
+    meals[selectedDay] = [...meals[selectedDay], mealData];
+    setMealForDay(meals);
+    setModalOpen(false);
+  }
+
   return (
     <>
       {modalOpen && (
-        <Modal handleClose={handleClose} selectedDay={selectedDay} />
+        <Modal
+          handleSave={handleSave}
+          handleClose={handleClose}
+          selectedDay={selectedDay}
+        />
       )}
       <div className="flex overflow-x-auto px-6 pb-1 m-5 rounded-xl shadow-2xl bg-light-background">
         {days.map((day) => (
@@ -48,4 +59,3 @@ export default function PlannerGrid() {
     </>
   );
 }
- 
