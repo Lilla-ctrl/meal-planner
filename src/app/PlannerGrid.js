@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import DayColumn from "./DayColumn";
-import Modal from "./Modal"
+import Modal from "./Modal";
 
 export default function PlannerGrid() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -37,7 +37,9 @@ export default function PlannerGrid() {
 
   return (
     <>
-      {modalOpen && <Modal handleClose={handleClose} />}
+      {modalOpen && (
+        <Modal handleClose={handleClose} selectedDay={selectedDay} />
+      )}
       <div className="flex overflow-x-auto px-6 pb-1 m-5 rounded-xl shadow-2xl bg-light-background">
         {days.map((day) => (
           <DayColumn key={day} day={day} handleOpen={handleOpen} />
@@ -46,3 +48,4 @@ export default function PlannerGrid() {
     </>
   );
 }
+ 
